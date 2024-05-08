@@ -1,0 +1,244 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a, input {
+    transition: 0.3s ease-in-out;
+}
+
+img, iframe{
+
+    vertical-align: top;
+}
+
+.tel:hover,
+.pataInfo p a:hover,
+.kontaktBox p a:hover{
+    text-decoration: underline;
+    color: #b30000;
+     transition: 0.3s ease-in-out;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    /**/
+}
+
+header .container{
+    width: 85%;
+    text-align: center;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.socIcon {
+    font-size: 27px;
+    justify-content: center;
+}
+/**/
+.fa-vk:hover {
+    color: #1877F2;
+}
+
+.fa-instagram:hover{
+    color: #E4405F;
+}
+
+.fa-telegram:hover {
+    color: #57acff;
+}
+
+.logo {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 700; 
+    padding: 50px 0;
+    letter-spacing: 5px;
+    line-height: 1  ;
+}
+
+.menu ul {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    gap: 100px;
+    /**/
+    padding: 50px 0;
+}
+
+.menu ul li a:hover {
+    color: #b30000;
+    border-bottom: 2px solid #b30000;
+}
+
+.menu ul li a {
+    padding-bottom: 10px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+.obsah {
+    text-align: center;
+    padding-bottom: 120px;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 50px 0 80px;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 30px;
+    line-height: 1.6;
+}
+
+.pata{
+    background: #eaeaea;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pata .logo {
+    font-size: 20px;
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+}
+
+.pataInfo {
+   
+    padding: 30px 0;
+}
+
+.pataInfo p i,
+.kontaktBox p i {
+      width: 35px;
+}
+
+.pataInfo p b, 
+.kontaktBox p b {
+    color: #b30000;
+}
+
+.pata .socIcon {
+    font-size: 40px;
+ }
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.kontakt,
+.rezervace {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.kontaktGrey {
+    background-color: #eaeaea;
+    padding: 0 30px 30px;
+}
+
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 50px;
+    
+}
+
+.cards{
+    font-size: 50px;
+}
+
+.kontakt iframe {
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+.kontaktGrey h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 30px 0;
+
+}
+
+input[type="text"],
+input[type= "email"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    margin: 0 auto 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    border-radius:7px;
+    border: 3px solid #b30000;
+    color: #b30000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    background: #b30000;
+    color: #fff;
+    cursor: pointer;
+}
+
+ .obsah img {
+    width: 24%;
+    padding: 10px;
+
+} */
+.foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3px;
+}
+
+.foto a {
+    width: 24%;
+}
+
+
+.foto img{
+    width: 100%;
+}
+
+

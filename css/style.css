@@ -1,0 +1,341 @@
+/*poznamka v css*/
+body, 
+/*potrebujeme stejny font i ve formulari - pridame*/
+input, 
+textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+/*h1, h2, h3, h4, p, li*/ 
+/*"*" (hvezdicka) oznacuje vsechny prvky (body, h1, p, obecne vsechny prvky)*/
+* {
+    /*margin je vnejsi ohraniceni,
+    dava "prostor dychat*/
+    /*auto - poskoci doprava (doprostred - text pres 70% a po okrajich 15%+15%)*/
+    margin: 0;
+    /*padding (vnitrni zobrazeni) zvetsuje velikost prvku
+    o pocet pixelu - odstrceni ostatnich elementu*/
+    padding: 0;
+    /*box-sizing - chovani prvku*/
+    /*border-box - zobrazovani stejne, spravne, podle definice*/
+    box-sizing: border-box;
+}
+/*a jsou odkazy*/
+a {
+    /*nechceme aby byl text podtrzeny*/
+    text-decoration: none;
+    /*barva textu (eng nebo #)*/
+    /*pokud se jedna o stejne cislice, neni treba psat vsech 6, ale pouze tri*/
+    color: #000;
+}
+
+a, input {
+    transition: 0.3s ease-in-out;
+}
+
+/*pro vsechny obrazky*/
+/*pridame i iframe, chceme ho stejny*/
+img, iframe{
+    /*ukotveni nahoru, nechceme zbytecna bila mista*/
+    vertical-align: top;
+}
+
+/*pro classu tel nastavime hover - chovani odkazu kdyz pres nej prejedeme mysi*/
+.tel:hover,
+/*JE TAM CARKA*/
+/*potrebujeme stejnou vlastnost i u odkazu v zapati a textu ("a" a "p")*/
+.pataInfo p a:hover,
+.kontaktBox p a:hover{
+    text-decoration: underline;
+    color: #b30000;
+    /*jak dlouho bude trvat prechod mezi barvami*/
+    transition: 0.3s ease-in-out;
+}
+
+/*trida container (i s teckou! - specifikuje, ze jde o tridu)*/
+/*prvek pak bude mit vlastnosti tridy*/
+.container {
+    width: 70%;
+    margin: auto;
+    /**/
+}
+
+/*definujeme - uprava containeru v headeru*/
+/*parametry se dedi (napr margin apod.)*/
+header .container{
+    width: 85%;
+    /*posune logo doprostred*/
+    text-align: center;
+}
+
+/*pro classu headerTop vytvorime flex*/
+.headerTop {
+    /*flex zarizuje umisteni na strance*/
+    display: flex;
+    /*misto mezi polozkami*/
+    justify-content: space-between;
+    padding: 30px 0;
+    /*da polozky na stred, tel cislo neni v rohu, ale vypada hezky*/
+    align-items: center;
+}
+
+/*class ikony*/
+.socIcon {
+    font-size: 27px;
+    justify-content: center;
+}
+/*fa-soli nebo fa-brands jsou tridy pro kazdou ikonu*/
+/*potrebujeme timpadem fa-nazev ikony*/
+/**/
+.fa-shield-cat:hover {
+    color: #1877F2;
+}
+
+.fa-instagram:hover{
+    color: #E4405F;
+}
+
+.fa-discord:hover {
+    color: #7289DA;
+}
+
+/*trida logo*/
+.logo {
+    font-size: 50px;
+    /*"transformuje text" - tenhle dela velka pismena*/
+    text-transform: uppercase;
+    /*tucne pismo - viz velikost stazenych fontu (700 znamena tucne)*/
+    font-weight: 700; 
+    padding: 50px 0;
+    letter-spacing: 5px;
+    line-height: 1  ;
+}
+
+/*pro classu menu, konkretne upravy seznamu v menu*/
+.menu ul {
+    text-transform: uppercase;
+    display: flex;
+    /*mezery mezi polozkami - enely = stejne*/
+    /*justify-content: space-evenly;*/
+    /*da vse na stred, apod. - vice typu*/
+    justify-content: center; 
+    /*zmeni typ odrazky - v nasem pripade zadna*/
+    list-style: none;
+    /*oddeleni polozek o mezeru o velikosti*/
+    gap: 100px;
+    /**/
+    padding: 50px 0;
+}
+
+/* odkaz je treba definovat "a"
+.menu ul li a {
+    color: red;
+}
+*/
+
+/*chovani menu pri najeti mysi*/
+.menu ul li a:hover {
+    /*text pri najeti bude cerveny*/
+    color: #b30000;
+    /*na spodnim okraji bude cervena cara o sirce 2px*/
+    border-bottom: 2px solid #b30000;
+}
+
+/*pro classu menu, konkretne upravy seznamu*/
+.menu ul li a {
+    /*odsazeni cary od textu (menu)*/
+    padding-bottom: 10px;
+}
+
+/*pro header a img nastavime vysku a sirku - chceme obrazek na sirku stranky - NE POSUVNIK*/
+/*srovname obrazek aby byl na sirku stranky, ne sirsi*/
+header img {
+    width: 100%;
+    height: auto;
+}
+
+/*SECTION STYLING-------------------------*/
+.obsah {
+    /*chceme text na stredu*/
+    text-align: center;
+    /*odsazeni od konce stranky/ostatnich prvku*/
+    padding-bottom: 120px;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 50px 0 80px;
+}
+
+p {
+    /*radkovani*/
+    line-height: 1.7;
+}
+
+.obsah h2 {
+    color: #a57a5b;
+    padding-bottom: 30px;
+    /*radkovani*/
+    line-height: 1.6;
+}
+
+/*FOOTER-------------------------*/
+.pata{
+    background: #eaeaea;
+    /*vycentrujeme celou patu*/
+    text-align: center;
+    /*odsazeni STEJNE JAKO NAHORE - viz pruzkumnik*/
+    padding-bottom: 50px;
+}
+
+/*ve tride pata mame logo, ale chceme upravit pouze logo v zapati (pata)*/
+.pata .logo {
+    font-size: 20px;
+    padding-bottom: 40px;
+    letter-spacing: 5px;
+}
+
+.pataInfo {
+    /*padding pouze 20px udela padding na vsechny strany*/
+    /*zadavame proto 20px a 0*/
+    /*shora, zdola 20px, po stranach nic*/
+    padding: 30px 0;
+}
+
+/*ikony (i) odskoci od odstavce (p)*/
+.pataInfo p i,
+.kontaktBox p i {
+   /*margin-right: 15px;*/
+   /*ikony nejsou stejne - dame jim stejnou sirku*/
+   width: 35px;
+}
+
+/*CARKA*/
+/*pridame i kontaktBox - potrebujeme to same chovani*/
+.pataInfo p b, 
+.kontaktBox p b {
+    color: #b30000;
+}
+
+.pata .socIcon {
+    font-size: 40px;
+    /*padding: 30px;*/
+}
+
+/*copyright bude mimo zapati ("pata")*/
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/*KONTAKT-------------------------*/
+.kontakt,
+/*pridame i rezervaci*/
+.rezervace {
+    padding: 100px 0;
+    text-align: center;
+}
+
+/*sedivy blok*/
+.kontaktGrey {
+    background-color: #eaeaea;
+    /*ze stran 20 px, aby nebyl text na krajich*/
+    padding: 0 30px 30px;
+}
+
+.kontaktFlex {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding-bottom: 50px;
+    
+}
+
+/*trida karty*/
+.cards{
+    font-size: 50px;
+}
+
+/*chceme roztahnout mapu na celou sirku containeru*/
+.kontakt iframe {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/*uprava nadpisu*/
+.kontaktGrey h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 30px 0;
+
+}
+
+/*chceme upravit pouze text (ne tlacitko)*/
+input[type="text"],
+input[type= "email"],
+input[type="date"],
+textarea,
+select {
+    display: block;
+    width: 70%;
+    /*potrebujeme misto po obou stranach*/
+    padding: 10px;
+    margin: 0 auto 5px;
+    /*ramecek*/
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    /*barva, ne kazdy prohlizec (napr firefox) to umi*/
+    background: #fff;
+}
+
+/*nastaveni vysky*/
+textarea {
+    height: 120px;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    border-radius:7px;
+    border: 3px solid #b30000;
+    color: #b30000;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[type=submit]:hover {
+    /*pri najeti se tla*/
+    background: #b30000;
+    color: #fff;
+    /*udela kurzor - rucicku*/
+    cursor: pointer;
+}
+
+/*GALERIE----------------------*/
+/* .obsah img {
+    width: 24%;
+    padding: 10px;
+
+} */
+
+/*trida foto*/
+.foto {
+    display: flex;
+    /*zalomi se*/
+    flex-wrap: wrap;
+    /*vycentrovani obrazku*/
+    justify-content: center;
+    /* mezera mezi fotkama */
+    gap: 3px;
+}
+
+/*pro odkazy*/
+.foto a {
+    width: 24%;
+}
+
+/*uprava obrazku*/
+.foto img{
+    /* chceme videt cele obrazky*/
+    width: 100%;
+}
+
